@@ -64,8 +64,8 @@ parse_dom () {
         fi
     fi
 }
-echo $1
-exit
+#echo $1
+#exit
 echo "USE \`${DB}\`;TRUNCATE \`tv_program\`;INSERT INTO \`tv_program\` (\`date_from\`, \`date_to\`, \`channel_id\`, \`description\`, \`genre\`)  VALUES " > sql.sql
 
 while read_dom; do
